@@ -7,7 +7,7 @@ API_KEY = "2a66aa050dec476e9ede880f7e09e932"
 
 end_point = "https://westus.api.cognitive.microsoft.com/sts/v1.0/issuetoken"
 
-media_file_path = './recording1.wav'
+media_file_path = './recording2.wav'
 
 # config speech
 
@@ -21,11 +21,11 @@ print(result)
 # translation = result.translations['en']
 # print(translation)
 translation_config = speech.translation.SpeechTranslationConfig(subscription=API_KEY, endpoint=end_point)
-# translation_config.speech_recognition_language = 'en-US'
+translation_config.speech_recognition_language = 'en-US'
 translation_config.add_target_language('zh-Hans')
 translator = speech.translation.TranslationRecognizer(translation_config=translation_config, audio_config=audio_config)
 result_translated = translator.recognize_once_async().get()
-print(result_translated.text)
+print(result_translated.translations)
 
 # translation config
 '''
