@@ -1,1 +1,2 @@
+json
 azure-cognitiveservices-speech
