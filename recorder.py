@@ -16,7 +16,7 @@ freq = 44100
 
 # Recording duration
 
-duration = 5
+duration = 10
 
  
 

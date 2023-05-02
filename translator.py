@@ -7,7 +7,7 @@ API_KEY = "2a66aa050dec476e9ede880f7e09e932"
 
 end_point = "https://westus.api.cognitive.microsoft.com/sts/v1.0/issuetoken"
 
-media_file_path = './recording2.wav'
+media_file_path = './recording1.wav'
 
 # config speech
 
