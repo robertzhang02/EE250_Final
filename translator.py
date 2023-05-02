@@ -37,5 +37,3 @@ audio_config = speech.audio.AudioConfig(filename=media_file_path) #if nothing in
 recognizer = speech.translation.TranslationRecognizer(translation_config=translation_config, audio_config=audio_config)
 result = recognizer.recognize_once()
 print(result)
-duration = result.duration // pow(10, 6)
-print(duration)
