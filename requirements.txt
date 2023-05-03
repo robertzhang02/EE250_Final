@@ -2,5 +2,4 @@ azure-cognitiveservices-speech
 scipy
 wavio
 sounddevice
-grovepi
 grove_rgb_lcd
