@@ -21,27 +21,7 @@ while True:
     speech_recognizer = speech.SpeechRecognizer(speech_config=speech_config, audio_config=audio_config)
     result = speech_recognizer.recognize_once_async().get()
     # print(result)
-    # print(result.cancellation_details.error_details)
-    # source_language_text = result.text
-    # translation = result.translations['en']
-    # print(translation)
-    translation_config = speech.translation.SpeechTranslationConfig(subscription=API_KEY, endpoint=end_point)
-    translation_config.speech_recognition_language = 'en-US'
-    translation_config.add_target_language('en')
-    translator = speech.translation.TranslationRecognizer(translation_config=translation_config, audio_config=audio_config)
-    result_translated = translator.recognize_once()
-    print(result_translated.translations['en'])
+    print(result.text)
     file = open("output.txt","a")
-    file.write(result_translated.translations['en']+"\n")
+    file.write(result.text+"\n")
     file.close()
-
-# translation config
-#
-# translation status
-# result.reason
-#
-# source_language_text = result.text
-# print(result.text)
-# duration = result.duration // pow(60, 4)
-# print(duration)
-# # result.translations['en']
