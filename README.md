@@ -13,11 +13,16 @@ Then, before you have ssh into the RPi, please check if your RPi can work with g
 After that, use ls command in the terminal to check if there is a text file which contains the speech you have recorded. It should have the same speech.txt, which  is indentical to what your recorder.py has outputed. Then, to display the speech you have recorded, run lcd.py to display speech text on the lcd screen. Finally,      you can see what you have recorded previously on the lcd screen. Please be careful to check if the speech-to-text conversion is good or not.
 
 #List of external libraries:
-
   azure-cognitiveservices-speech
+  
   scipy
+  
   wavio
+  
   sounddevice
+  
   grove_rgb_lcd
+  
   time
+  
   sockets
