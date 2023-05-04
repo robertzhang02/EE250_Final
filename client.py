@@ -7,7 +7,7 @@ def Main():
     s = socket.socket() # create a socket object
     s.connect((host,port)) # connect to the server
 
-    with open('received_data.txt', 'wb') as f: # create a new file to store the received data in binary mode
+    with open('speech.txt', 'wb') as f: # create a new file to store the received data in binary mode
         while True:
             data = s.recv(1024) # receive the data from the server in chunks of 1024 bytes
             if not data:
