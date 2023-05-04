@@ -1,5 +1,4 @@
 # Using python version 3.10.7
-import json
 import azure.cognitiveservices.speech as speech
 import sounddevice as sd
 import wavio as wv
