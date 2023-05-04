@@ -1,10 +1,12 @@
-# Using python version 3.10.7
 import azure.cognitiveservices.speech as speech
 import sounddevice as sd
 import wavio as wv
 
+# Sampling frequency
 freq = 44100
+# Set the Duration of each speech
 duration = 5
+#API Setting
 API_KEY = "2a66aa050dec476e9ede880f7e09e932"
 end_point = "https://westus.api.cognitive.microsoft.com/sts/v1.0/issuetoken"
 
