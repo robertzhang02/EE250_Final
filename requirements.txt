@@ -3,3 +3,5 @@ scipy
 wavio
 sounddevice
 grove_rgb_lcd
+time
+sockets
