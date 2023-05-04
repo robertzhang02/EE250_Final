@@ -13,7 +13,7 @@ def Main():
     conn, addr = s.accept() # accept the connection request
     print('Connection from: ' + str(addr))
 
-    with open('output.txt', 'rb') as f: # open the file to be transferred in binary mode
+    with open('speech.txt', 'rb') as f: # open the file to be transferred in binary mode
         data = f.read(1024) # read the file in chunks of 1024 bytes
         while data:
             conn.send(data) # send the data to the client
